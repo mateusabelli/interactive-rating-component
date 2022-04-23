@@ -40,7 +40,7 @@ body {
 
 /* ---------------- first stage blocks ---------------- */
 .card-container {
-  min-width: 25.5rem;
+  width: 25.5rem;
   min-height: 26rem;
   padding: 2rem;
   border-radius: 1.8rem;
@@ -50,12 +50,6 @@ body {
     var(--clr-neutral-600) 150%
   );
   font-family: var(--ff-sans);
-}
-
-@media (max-width: 28rem) {
-  .card-container {
-    min-width: 20rem;
-  }
 }
 
 .card-header-icon {
@@ -72,7 +66,6 @@ body {
 }
 
 .card-description {
-  width: 36ch;
   font-size: 0.938rem;
   margin-bottom: 1.5rem;
 }
@@ -133,7 +126,7 @@ body {
   background-color: var(--clr-neutral-100);
 }
 
-/* ---------------- animation---------------- */
+/* ---------------- first stage animation---------------- */
 .card-header-icon > img {
   animation: star-spin 1s 1 ease-in-out;
 }
@@ -173,6 +166,32 @@ body {
   transition: 0s;
 }
 
+/* ---------------- first stage breakpoints ---------------- */
+@media (max-width: 28rem) {
+  .card-container {
+    max-width: 20.5rem;
+    padding: 1.5rem;
+    border-radius: 1.125rem;
+  }
+
+  .card-title {
+    margin: 1rem 0;
+  }
+
+  .card-description {
+    margin-bottom: 1rem;
+  }
+
+  .card-rate-buttons {
+    gap: 0rem;
+    margin-bottom: 1.5rem;
+  }
+  .card-rate-buttons > button {
+    min-height: 2.8em;
+    min-width: 2.8em;
+  }
+}
+
 /* ---------------- second stage blocks ---------------- */
 .card-container.thank-you {
   display: flex;
@@ -207,8 +226,7 @@ body {
   margin: 0;
 }
 
-/* ---------------- animation---------------- */
-
+/* ---------------- second stage animation---------------- */
 .card-header-icon.thank-you > img {
   animation: thanks-float 0.5s 1 ease-in-out;
 }

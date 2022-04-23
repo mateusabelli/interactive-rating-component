@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/card-built-using-html-with-template-css-with-animations-and-js-BkGgiYbS9)
+- Live Site URL: [Live Site](https://mateusabelli.github.io/interactive-rating-component/)
 
 ## My process
 
